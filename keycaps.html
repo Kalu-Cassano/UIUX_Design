@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycap - VNMK | Vietnam Mechanical Keyboard</title>
+    <meta name="description" content="Bộ keycap cao cấp cho bàn phím cơ. Các profile Cherry, SA, OEM, XDA bằng chất liệu ABS và PBT.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">VNMK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keyboards.html">Bàn Phím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="keycaps.html">Keycap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="switches.html">Switch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding" style="padding-top: 8rem; background: var(--bg-secondary);">
+        <div class="container">
+            <h1 class="section-title">Keycap</h1>
+            <p class="section-subtitle">Các bộ keycap cao cấp với nhiều kiểu dáng và chất liệu</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Filter Sidebar -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="filter-sidebar">
+                        <h3 class="filter-title">Bộ Lọc</h3>
+                        
+                        <!-- Brand Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Thương Hiệu</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandKeykobo" data-filter="brand" data-value="Keykobo">
+                                <label class="form-check-label" for="brandKeykobo">Keykobo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandGMK" data-filter="brand" data-value="GMK">
+                                <label class="form-check-label" for="brandGMK">GMK</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandJTK" data-filter="brand" data-value="JTK">
+                                <label class="form-check-label" for="brandJTK">JTK</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandSwagkeys" data-filter="brand" data-value="Swagkeys">
+                                <label class="form-check-label" for="brandSwagkeys">Swagkeys</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandEPPT" data-filter="brand" data-value="EPPT">
+                                <label class="form-check-label" for="brandEPPT">EPPT</label>
+                            </div>
+                        </div>
+
+                        <!-- Profile Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Profile</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="profileCherry" data-filter="profile" data-value="Cherry">
+                                <label class="form-check-label" for="profileCherry">Cherry</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="profileSA" data-filter="profile" data-value="SA">
+                                <label class="form-check-label" for="profileSA">SA</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="profileOEM" data-filter="profile" data-value="OEM">
+                                <label class="form-check-label" for="profileOEM">OEM</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="profileXDA" data-filter="profile" data-value="XDA">
+                                <label class="form-check-label" for="profileXDA">XDA</label>
+                            </div>
+                        </div>
+
+                        <!-- Material Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Chất Liệu</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="materialABS" data-filter="material" data-value="ABS">
+                                <label class="form-check-label" for="materialABS">ABS</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="materialPBT" data-filter="material" data-value="PBT">
+                                <label class="form-check-label" for="materialPBT">PBT</label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Khoảng Giá</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="priceUnder80">
+                                <label class="form-check-label" for="priceUnder80">Dưới 2.000.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="price80-100">
+                                <label class="form-check-label" for="price80-100">2.000.000₫ - 3.000.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="priceOver100">
+                                <label class="form-check-label" for="priceOver100">Trên 3.000.000₫</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                <!-- Keycap 1 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="1" data-brand="Keykobo" data-profile="Cherry" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/1.png" alt="Purple Night" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Purple Night</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keykobo | Kiểu Dáng: Cherry | Chất Liệu: PBT | Chủ Đề: Gradient Tím</small>
+                            </p>
+                            <div class="card-price">2.090.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 2 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="2" data-brand="GMK" data-profile="SA" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/2.png" alt="Cyber Blue" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Cyber Blue</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> GMK | Kiểu Dáng: SA | Chất Liệu: ABS | Chủ Đề: Blue Neon</small>
+                            </p>
+                            <div class="card-price">2.320.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 3 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="3" data-brand="JTK" data-profile="OEM" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/3.png" alt="Classic Black" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Classic Black</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> JTK | Kiểu Dáng: OEM | Chất Liệu: PBT | Chủ Đề: Black & White</small>
+                            </p>
+                            <div class="card-price">1.850.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 4 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="4" data-brand="Swagkeys" data-profile="XDA" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/4.png" alt="Minimalist XDA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Minimalist XDA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Swagkeys | Kiểu Dáng: XDA | Chất Liệu: PBT | Chủ Đề: Minimal Gray</small>
+                            </p>
+                            <div class="card-price">1.990.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 5 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="5" data-brand="JTK" data-profile="Cherry" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/8.png" alt="Vintage Cherry" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Retro Cherry</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> EPPT | Kiểu Dáng: Cherry | Chất Liệu: ABS | Chủ Đề: Retro Beige</small>
+                            </p>
+                            <div class="card-price">2.220.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 6 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="6" data-brand="GMK" data-profile="SA" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/6.jpg" alt="Neon SA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Neon SA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> GMK | Kiểu Dáng: SA | Chất Liệu: ABS | Chủ Đề: Neon Purple/Blue</small>
+                            </p>
+                            <div class="card-price">2.550.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 7 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="7" data-brand="Keykobo" data-profile="OEM" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/7.png" alt="Elegant White" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Dark Mode PBT</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keykobo | Kiểu Dáng: Cherry | Chất Liệu: PBT | Chủ Đề: Dark Gray</small>
+                            </p>
+                            <div class="card-price">2.090.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 8 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="8" data-brand="JTK" data-profile="OEM" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/keycap-8.svg" alt="Gradient OEM" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Gradient OEM</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> JTK | Kiểu Dáng: OEM | Chất Liệu: PBT | Chủ Đề: Purple to Blue</small>
+                            </p>
+                            <div class="card-price">2.200.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Keycap 9 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="9" data-brand="EPPT" data-profile="XDA" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/9.jpg" alt="Carbon XDA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Carbon XDA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> EPPT | Kiểu Dáng: XDA | Chất Liệu: PBT | Chủ Đề: Carbon Fiber</small>
+                            </p>
+                            <div class="card-price">2.320.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 10 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="10" data-brand="Keykobo" data-profile="SA" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/10.jpg" alt="Cosmic SA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Cosmic SA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keykobo | Kiểu Dáng: SA | Chất Liệu: PBT | Chủ Đề: Galaxy Purple</small>
+                            </p>
+                            <div class="card-price">2.550.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 11 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="11" data-brand="GMK" data-profile="OEM" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/11.jpg" alt="Ocean OEM" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Ocean OEM</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> GMK | Kiểu Dáng: OEM | Chất Liệu: PBT | Chủ Đề: Deep Ocean Blue</small>
+                            </p>
+                            <div class="card-price">2.480.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 12 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="12" data-brand="JTK" data-profile="SA" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/12.jpg" alt="Sunset SA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Sunset SA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> JTK | Kiểu Dáng: SA | Chất Liệu: ABS | Chủ Đề: Warm Gradient</small>
+                            </p>
+                            <div class="card-price">2.400.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 13 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="13" data-brand="Swagkeys" data-profile="Cherry" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/13.jpg" alt="Forest Cherry" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Forest Cherry</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Swagkeys | Kiểu Dáng: Cherry | Chất Liệu: PBT | Chủ Đề: Green Forest</small>
+                            </p>
+                            <div class="card-price">2.200.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 14 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="14" data-brand="EPPT" data-profile="OEM" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/14.png" alt="Royal OEM" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Royal OEM</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> EPPT | Kiểu Dáng: OEM | Chất Liệu: ABS | Chủ Đề: Gold & Purple</small>
+                            </p>
+                            <div class="card-price">2.350.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 15 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="15" data-brand="Keykobo" data-profile="XDA" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/15.jpg" alt="Sakura XDA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Sakura XDA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keykobo | Kiểu Dáng: XDA | Chất Liệu: PBT | Chủ Đề: Cherry Blossom</small>
+                            </p>
+                            <div class="card-price">2.450.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 16 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="16" data-brand="GMK" data-profile="Cherry" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/16.jpg" alt="Monochrome Cherry" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Monochrome Cherry</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> GMK | Kiểu Dáng: Cherry | Chất Liệu: ABS | Chủ Đề: Black & White</small>
+                            </p>
+                            <div class="card-price">2.150.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 17 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="17" data-brand="JTK" data-profile="XDA" data-material="ABS">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/17.png" alt="Arctic XDA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Arctic XDA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> JTK | Kiểu Dáng: XDA | Chất Liệu: ABS | Chủ Đề: Ice Blue</small>
+                            </p>
+                            <div class="card-price">2.300.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 18 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="18" data-brand="Swagkeys" data-profile="SA" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/18.jpg" alt="Lavender SA" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Lavender SA</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Swagkeys | Kiểu Dáng: SA | Chất Liệu: PBT | Chủ Đề: Soft Purple</small>
+                            </p>
+                            <div class="card-price">2.500.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 19 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="19" data-brand="EPPT" data-profile="Cherry" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/19.png" alt="Mint Cherry" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Mint Cherry</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> EPPT | Kiểu Dáng: Cherry | Chất Liệu: PBT | Chủ Đề: Fresh Mint</small>
+                            </p>
+                            <div class="card-price">2.100.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keycap 20 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="20" data-brand="Keykobo" data-profile="OEM" data-material="PBT">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keycaps/20.jpg" alt="Lava OEM" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Lava OEM</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keykobo | Kiểu Dáng: OEM | Chất Liệu: PBT | Chủ Đề: Red Orange</small>
+                            </p>
+                            <div class="card-price">2.380.000₫</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Logo & Description -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">VNMK</span>
+                        </a>
+                    </div>
+                    <p class="footer-desc">VNMK - Vietnam Mechanical Keyboard. Xây dựng bàn phím hoàn hảo của bạn với các linh kiện cao cấp, switch tùy chỉnh và bộ keycap độc đáo.</p>
+                </div>
+                <!-- Column 2: Shop -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Cửa Hàng</h5>
+                    <ul class="footer-links">
+                        <li><a href="keyboards.html">Bàn Phím</a></li>
+                        <li><a href="keycaps.html">Keycap</a></li>
+                        <li><a href="switches.html">Switch</a></li>
+                        <li><a href="keyboards.html">Phụ Kiện</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Hỗ Trợ</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="about.html">Bảo Hành</a></li>
+                        <li><a href="contact.html">Vận Chuyển</a></li>
+                        <li><a href="contact.html">Trả Hàng</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Kết Nối Với Chúng Tôi</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 VNMK – Vietnam Mechanical Keyboard. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cart Management Script -->
+    <script src="js/cart.js"></script>
+    
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+            const productItems = document.querySelectorAll('.product-item');
+            
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', filterProducts);
+            });
+            
+            function filterProducts() {
+                // Get all selected filters
+                const selectedFilters = {
+                    brand: [],
+                    profile: [],
+                    material: []
+                };
+                
+                filterCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const filterType = checkbox.getAttribute('data-filter');
+                        const filterValue = checkbox.getAttribute('data-value');
+                        if (selectedFilters[filterType]) {
+                            selectedFilters[filterType].push(filterValue);
+                        }
+                    }
+                });
+                
+                // Filter products
+                productItems.forEach(item => {
+                    let show = true;
+                    
+                    // Check brand filter
+                    if (selectedFilters.brand.length > 0) {
+                        const itemBrand = item.getAttribute('data-brand');
+                        if (!selectedFilters.brand.includes(itemBrand)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check profile filter
+                    if (selectedFilters.profile.length > 0 && show) {
+                        const itemProfile = item.getAttribute('data-profile');
+                        if (!selectedFilters.profile.includes(itemProfile)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check material filter
+                    if (selectedFilters.material.length > 0 && show) {
+                        const itemMaterial = item.getAttribute('data-material');
+                        if (!selectedFilters.material.includes(itemMaterial)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Show or hide item
+                    if (show) {
+                        item.style.display = '';
+                        item.classList.add('fade-in');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+        
+        // Add product detail links with parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const productItems = document.querySelectorAll('.product-item');
+            productItems.forEach((item) => {
+                const productId = item.getAttribute('data-product-id');
+                const detailLinks = item.querySelectorAll('a[href="product-detail.html"]');
+                detailLinks.forEach(link => {
+                    link.href = `product-detail.html?category=keycaps&id=${productId}`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

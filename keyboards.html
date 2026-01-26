@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn Phím - VNMK | Vietnam Mechanical Keyboard</title>
+    <meta name="description" content="Duyệt bộ sưu tập bàn phím cơ học cao cấp. Layout tùy chỉnh, switch hot-swappable, chất lượng xây dựng cao cấp.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">VNMK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="keyboards.html">Bàn Phím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keycaps.html">Keycap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="switches.html">Switch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding" style="padding-top: 8rem; background: var(--bg-secondary);">
+        <div class="container">
+            <h1 class="section-title">Bàn Phím Cơ</h1>
+            <p class="section-subtitle">Bàn phím tùy chỉnh cao cấp cho mọi sở thích</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Filter Sidebar -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="filter-sidebar">
+                        <h3 class="filter-title">Bộ Lọc</h3>
+                        
+                        <!-- Layout Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Layout</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="layout60" data-filter="layout" data-value="60%">
+                                <label class="form-check-label" for="layout60">60%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="layout65" data-filter="layout" data-value="65%">
+                                <label class="form-check-label" for="layout65">65%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="layout75" data-filter="layout" data-value="75%">
+                                <label class="form-check-label" for="layout75">75%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="layoutTKL" data-filter="layout" data-value="TKL">
+                                <label class="form-check-label" for="layoutTKL">TKL</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="layoutFull" data-filter="layout" data-value="Fullsize">
+                                <label class="form-check-label" for="layoutFull">Fullsize</label>
+                            </div>
+                        </div>
+
+                        <!-- Mount Type Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Kiểu Mount</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="mountGasket" data-filter="mount" data-value="Gasket">
+                                <label class="form-check-label" for="mountGasket">Gasket Mount</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="mountTop" data-filter="mount" data-value="Top Mount">
+                                <label class="form-check-label" for="mountTop">Top Mount</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="mountTray" data-filter="mount" data-value="Tray Mount">
+                                <label class="form-check-label" for="mountTray">Tray Mount</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="mountBottom" data-filter="mount" data-value="Bottom Mount">
+                                <label class="form-check-label" for="mountBottom">Bottom Mount</label>
+                            </div>
+                        </div>
+
+                        <!-- Sound Profile Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Hồ Sơ Âm Thanh</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="soundThock" data-filter="sound" data-value="Thock">
+                                <label class="form-check-label" for="soundThock">Thock</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="soundClack" data-filter="sound" data-value="Clack">
+                                <label class="form-check-label" for="soundClack">Clack</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="soundSilent" data-filter="sound" data-value="Silent">
+                                <label class="form-check-label" for="soundSilent">Silent</label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Khoảng Giá</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="priceUnder200" data-filter="price" data-value="under200">
+                                <label class="form-check-label" for="priceUnder200">Dưới 5.000.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="price200300" data-filter="price" data-value="200-300">
+                                <label class="form-check-label" for="price200300">5.000.000₫ - 7.000.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="price300400" data-filter="price" data-value="300-400">
+                                <label class="form-check-label" for="price300400">7.000.000₫ - 9.000.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="priceOver400" data-filter="price" data-value="over400">
+                                <label class="form-check-label" for="priceOver400">Trên 9.000.000₫</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <!-- Keyboard 1 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="1" data-layout="75%" data-mount="Gasket" data-sound="Thock" data-price="299">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/1.webp" alt="VNMK Pro 75%" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK Pro 75%</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 75% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">7.000.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 2 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="2" data-layout="TKL" data-mount="Top Mount" data-sound="Clack" data-price="249">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/2.webp" alt="VNMK TKL Classic" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK TKL Classic</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: TKL | Mount: Top Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">5.800.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 3 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="3" data-layout="65%" data-mount="Gasket" data-sound="Thock" data-price="199">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/3.webp" alt="VNMK 65% Compact" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 65% Compact</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 65% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">4.650.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 4 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="4" data-layout="Fullsize" data-mount="Bottom Mount" data-sound="Silent" data-price="349">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/4.webp" alt="VNMK Fullsize Elite" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK Fullsize Elite</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: Fullsize | Mount: Bottom Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-silent">Silent</span>
+                                    <div class="card-price mt-3">8.150.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 5 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="5" data-layout="60%" data-mount="Tray Mount" data-sound="Clack" data-price="179">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/5.webp" alt="VNMK 60% Mini" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 60% Mini</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 60% | Mount: Tray Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">4.200.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 6 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="6" data-layout="75%" data-mount="Gasket" data-sound="Thock" data-price="329">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/6.webp" alt="VNMK Pro 75% RGB" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK Pro 75% RGB</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 75% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">7.700.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 7 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="7" data-layout="65%" data-mount="Gasket" data-sound="Thock" data-price="279">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/7.webp" alt="VNMK 65% Wireless" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 65% Wireless</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 65% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">6.520.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 8 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="8" data-layout="TKL" data-mount="Top Mount" data-sound="Clack" data-price="269">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/8.webp" alt="VNMK TKL Pro" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK TKL Pro</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: TKL | Mount: Top Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">6.280.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 9 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="9" data-layout="60%" data-mount="Tray Mount" data-sound="Silent" data-price="189">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/9.webp" alt="VNMK 60% Silent" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 60% Silent</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 60% | Mount: Tray Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-silent">Silent</span>
+                                    <div class="card-price mt-3">4.410.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 10 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="10" data-layout="75%" data-mount="Top Mount" data-sound="Thock" data-price="309">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/10.webp" alt="VNMK 75% Pro Max" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 75% Pro Max</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 75% | Mount: Top Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">7.210.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 11 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="11" data-layout="65%" data-mount="Tray Mount" data-sound="Thock" data-price="259">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/11.webp" alt="VNMK 65% Elite" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 65% Elite</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 65% | Mount: Tray Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">6.037.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 12 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="12" data-layout="60%" data-mount="Gasket" data-sound="Clack" data-price="209">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/12.webp" alt="VNMK 60% Gaming" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 60% Gaming</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 60% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">4.870.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 13 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="13" data-layout="TKL" data-mount="Gasket" data-sound="Silent" data-price="289">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/13.webp" alt="VNMK TKL Silent" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK TKL Silent</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: TKL | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-silent">Silent</span>
+                                    <div class="card-price mt-3">6.737.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 14 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="14" data-layout="Fullsize" data-mount="Gasket" data-sound="Thock" data-price="379">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/14.webp" alt="VNMK Fullsize Pro" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK Fullsize Pro</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: Fullsize | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">8.843.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 15 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="15" data-layout="65%" data-mount="Top Mount" data-sound="Silent" data-price="269">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/15.webp" alt="VNMK 65% Silent Pro" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 65% Silent Pro</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 65% | Mount: Top Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-silent">Silent</span>
+                                    <div class="card-price mt-3">6.277.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 16 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="16" data-layout="75%" data-mount="Gasket" data-sound="Clack" data-price="319">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/16.webp" alt="VNMK 75% Clack Pro" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 75% Clack Pro</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 75% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">7.439.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 17 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="17" data-layout="60%" data-mount="Top Mount" data-sound="Thock" data-price="199">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/17.webp" alt="VNMK 60% Thock" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 60% Thock</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 60% | Mount: Top Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">4.637.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 18 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="18" data-layout="TKL" data-mount="Bottom Mount" data-sound="Thock" data-price="279">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/18.webp" alt="VNMK TKL Elite" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK TKL Elite</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: TKL | Mount: Bottom Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-thock">Thock</span>
+                                    <div class="card-price mt-3">6.497.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 19 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="19" data-layout="65%" data-mount="Gasket" data-sound="Clack" data-price="289">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/19.webp" alt="VNMK 65% Clack Max" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK 65% Clack Max</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: 65% | Mount: Gasket | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">6.737.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard 20 -->
+                        <div class="col-md-6 col-lg-4 product-item" data-product-id="20" data-layout="Fullsize" data-mount="Tray Mount" data-sound="Clack" data-price="359">
+                            <div class="card card-custom">
+                                <div class="card-img-wrapper">
+                                    <img src="images/keyboards/20.webp" alt="VNMK Fullsize Clack" class="card-img-top">
+                                </div>
+                                <div class="card-body-custom">
+                                    <h5 class="card-title-custom">VNMK Fullsize Clack</h5>
+                                    <p class="card-text-custom">
+                                        <small class="text-secondary">Layout: Fullsize | Mount: Tray Mount | Switch: Hot-swappable</small>
+                                    </p>
+                                    <span class="badge badge-custom badge-clack">Clack</span>
+                                    <div class="card-price mt-3">8.367.000₫</div>
+                                    <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                                    <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Logo & Description -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">VNMK</span>
+                        </a>
+                    </div>
+                    <p class="footer-desc">VNMK - Vietnam Mechanical Keyboard. Xây dựng bàn phím hoàn hảo của bạn với các linh kiện cao cấp, switch tùy chỉnh và bộ keycap độc đáo.</p>
+                </div>
+                <!-- Column 2: Shop -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Cửa Hàng</h5>
+                    <ul class="footer-links">
+                        <li><a href="keyboards.html">Bàn Phím</a></li>
+                        <li><a href="keycaps.html">Keycap</a></li>
+                        <li><a href="switches.html">Switch</a></li>
+                        <li><a href="keyboards.html">Phụ Kiện</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Hỗ Trợ</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="about.html">Bảo Hành</a></li>
+                        <li><a href="contact.html">Vận Chuyển</a></li>
+                        <li><a href="contact.html">Trả Hàng</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Kết Nối Với Chúng Tôi</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 VNMK – Vietnam Mechanical Keyboard. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cart Management Script -->
+    <script src="js/cart.js"></script>
+    
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+            const productItems = document.querySelectorAll('.product-item');
+            
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', filterProducts);
+            });
+            
+            function filterProducts() {
+                // Get all selected filters
+                const selectedFilters = {
+                    layout: [],
+                    mount: [],
+                    sound: [],
+                    price: []
+                };
+                
+                filterCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const filterType = checkbox.getAttribute('data-filter');
+                        const filterValue = checkbox.getAttribute('data-value');
+                        if (selectedFilters[filterType]) {
+                            selectedFilters[filterType].push(filterValue);
+                        }
+                    }
+                });
+                
+                // Filter products
+                productItems.forEach(item => {
+                    let show = true;
+                    
+                    // Check layout filter
+                    if (selectedFilters.layout.length > 0) {
+                        const itemLayout = item.getAttribute('data-layout');
+                        if (!selectedFilters.layout.includes(itemLayout)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check mount filter
+                    if (selectedFilters.mount.length > 0 && show) {
+                        const itemMount = item.getAttribute('data-mount');
+                        if (!selectedFilters.mount.includes(itemMount)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check sound filter
+                    if (selectedFilters.sound.length > 0 && show) {
+                        const itemSound = item.getAttribute('data-sound');
+                        if (!selectedFilters.sound.includes(itemSound)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check price filter
+                    if (selectedFilters.price.length > 0 && show) {
+                        const itemPrice = parseInt(item.getAttribute('data-price'));
+                        let priceMatch = false;
+                        
+                        selectedFilters.price.forEach(priceRange => {
+                            if (priceRange === 'under200' && itemPrice < 200) {
+                                priceMatch = true;
+                            } else if (priceRange === '200-300' && itemPrice >= 200 && itemPrice <= 300) {
+                                priceMatch = true;
+                            } else if (priceRange === '300-400' && itemPrice >= 300 && itemPrice <= 400) {
+                                priceMatch = true;
+                            } else if (priceRange === 'over400' && itemPrice > 400) {
+                                priceMatch = true;
+                            }
+                        });
+                        
+                        if (!priceMatch) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Show or hide item
+                    if (show) {
+                        item.style.display = '';
+                        item.classList.add('fade-in');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+        
+        // Add product detail links with parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const productItems = document.querySelectorAll('.product-item');
+            productItems.forEach((item) => {
+                const productId = item.getAttribute('data-product-id');
+                const detailLinks = item.querySelectorAll('a[href="product-detail.html"]');
+                detailLinks.forEach(link => {
+                    link.href = `product-detail.html?category=keyboards&id=${productId}`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

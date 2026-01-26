@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - VNMK | Vietnam Mechanical Keyboard</title>
+    <meta name="description" content="Switch cơ học cao cấp. Switch Linear, Tactile cho mọi sở thích gõ phím.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">VNMK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keyboards.html">Bàn Phím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keycaps.html">Keycap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="switches.html">Switch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding" style="padding-top: 8rem; background: var(--bg-secondary);">
+        <div class="container">
+            <h1 class="section-title">Switch</h1>
+            <p class="section-subtitle">Switch cơ học cao cấp cho trải nghiệm gõ phím hoàn hảo</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Filter Sidebar -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="filter-sidebar">
+                        <h3 class="filter-title">Bộ Lọc</h3>
+                        
+                        <!-- Brand Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Thương Hiệu</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandHMX" data-filter="brand" data-value="HMX">
+                                <label class="form-check-label" for="brandHMX">HMX</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandGateron" data-filter="brand" data-value="Gateron">
+                                <label class="form-check-label" for="brandGateron">Gateron</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandCherry" data-filter="brand" data-value="Cherry">
+                                <label class="form-check-label" for="brandCherry">Cherry</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandKeygeek" data-filter="brand" data-value="Keygeek">
+                                <label class="form-check-label" for="brandKeygeek">Keygeek</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandTTC" data-filter="brand" data-value="TTC">
+                                <label class="form-check-label" for="brandTTC">TTC</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandSwagkey" data-filter="brand" data-value="Swagkey">
+                                <label class="form-check-label" for="brandSwagkey">Swagkey</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="brandOtenmu" data-filter="brand" data-value="Otenmu">
+                                <label class="form-check-label" for="brandOtenmu">Otenmu</label>
+                            </div>
+                        </div>
+
+                        <!-- Switch Type Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Loại Switch</label>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="typeLinear" data-filter="type" data-value="Linear">
+                                <label class="form-check-label" for="typeLinear">Linear</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input filter-checkbox" type="checkbox" id="typeTactile" data-filter="type" data-value="Tactile">
+                                <label class="form-check-label" for="typeTactile">Tactile</label>
+                            </div>
+                        </div>
+
+                        <!-- Actuation Force Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Lực Lò Xo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="forceLight">
+                                <label class="form-check-label" for="forceLight">Nhẹ (35-45g)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="forceMedium">
+                                <label class="form-check-label" for="forceMedium">Vừa (50-55g)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="forceHeavy">
+                                <label class="form-check-label" for="forceHeavy">Nặng (60g+)</label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Khoảng Giá</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="priceUnder70">
+                                <label class="form-check-label" for="priceUnder70">Under $0.70</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="price70-80">
+                                <label class="form-check-label" for="price70-80">20.000₫ - 25.000₫</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="priceOver80">
+                                <label class="form-check-label" for="priceOver80">Trên 25.000₫</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                <!-- Switch 1 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="1" data-brand="HMX" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/1.png" alt="HMX Linear Purple" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">HMX Linear Purple</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> HMX | Loại: Linear | Kích Hoạt: 45g | Âm Thanh: Smooth & Quiet</small>
+                            </p>
+                            <div class="card-price">15.200₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 2 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="2" data-brand="Gateron" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/2.webp" alt="Gateron Tactile Blue" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Gateron Tactile Blue</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Gateron | Loại: Tactile | Kích Hoạt: 55g | Âm Thanh: Tactile Bump</small>
+                            </p>
+                            <div class="card-price">16.350₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 3 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="3" data-brand="Cherry" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/3.webp" alt="Cherry Linear Red" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Cherry Linear Red</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Cherry | Loại: Linear | Kích Hoạt: 45g | Âm Thanh: Smooth & Quiet</small>
+                            </p>
+                            <div class="card-price">17.500₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 4 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="4" data-brand="Keygeek" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/4.webp" alt="Keygeek Silent Linear" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Keygeek Silent Linear</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keygeek | Loại: Linear | Kích Hoạt: 40g | Âm Thanh: Silent</small>
+                            </p>
+                            <div class="card-price">18.700₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 5 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="5" data-brand="TTC" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/5.webp" alt="TTC Heavy Tactile" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">TTC Heavy Tactile</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> TTC | Loại: Tactile | Kích Hoạt: 67g | Âm Thanh: Deep Thock</small>
+                            </p>
+                            <div class="card-price">19.850₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 6 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="6" data-brand="Swagkey" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/6.webp" alt="Swagkey Light Linear" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Swagkey Light Linear</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Swagkey | Loại: Linear | Kích Hoạt: 35g | Âm Thanh: Buttery Smooth</small>
+                            </p>
+                            <div class="card-price">15.880₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 7 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="7" data-brand="Otenmu" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/7.webp" alt="Otenmu Speed Linear" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Otenmu Speed Linear</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Otenmu | Loại: Linear | Kích Hoạt: 45g | Âm Thanh: Fast & Responsive</small>
+                            </p>
+                            <div class="card-price">16.840₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 8 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="8" data-brand="HMX" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/8.webp" alt="HMX Medium Tactile" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">HMX Medium Tactile</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> HMX | Loại: Tactile | Kích Hoạt: 50g | Âm Thanh: Balanced Bump</small>
+                            </p>
+                            <div class="card-price">17.030₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 9 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="9" data-brand="Gateron" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/9.webp" alt="Gateron Premium Linear" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Gateron Premium Linear</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Gateron | Loại: Linear | Kích Hoạt: 42g | Âm Thanh: Premium Thock</small>
+                            </p>
+                            <div class="card-price">20.970₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 10 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="10" data-brand="Cherry" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/10.webp" alt="Cherry Tactile Brown" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Cherry Tactile Brown</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Cherry | Loại: Tactile | Kích Hoạt: 55g | Âm Thanh: Tactile Bump</small>
+                            </p>
+                            <div class="card-price">18.174₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 11 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="11" data-brand="Keygeek" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/11.webp" alt="Keygeek Tactile Pro" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Keygeek Tactile Pro</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Keygeek | Loại: Tactile | Kích Hoạt: 52g | Âm Thanh: Crisp Bump</small>
+                            </p>
+                            <div class="card-price">17.475₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Switch 12 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="12" data-brand="TTC" data-type="Linear">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/12.webp" alt="TTC Linear Speed" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">TTC Linear Speed</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> TTC | Loại: Linear | Kích Hoạt: 45g | Âm Thanh: Fast & Smooth</small>
+                            </p>
+                            <div class="card-price">16.563₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch 13 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="13" data-brand="HMX" data-type="Clicky">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/13.webp" alt="HMX Clicky Onyx" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">HMX Clicky Onyx</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> HMX | Loại: Clicky | Kích Hoạt: 50g | Âm Thanh: Crisp Click</small>
+                            </p>
+                            <div class="card-price">18.330₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch 14 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="14" data-brand="Swagkey" data-type="Tactile">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/14.webp" alt="Swagkey Tactile Gold" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Swagkey Tactile Gold</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Swagkey | Loại: Tactile | Kích Hoạt: 55g | Âm Thanh: Medium Bump</small>
+                            </p>
+                            <div class="card-price">17.950₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch 15 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="15" data-brand="Otenmu" data-type="Clicky">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/15.webp" alt="Otenmu Clicky Premium" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Otenmu Clicky Premium</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Otenmu | Loại: Clicky | Kích Hoạt: 60g | Âm Thanh: High Pitch Click</small>
+                            </p>
+                            <div class="card-price">19.137₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch 16 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="16" data-brand="Gateron" data-type="Clicky">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/16.webp" alt="Gateron Clicky Yellow" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Gateron Clicky Yellow</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Gateron | Loại: Clicky | Kích Hoạt: 50g | Âm Thanh: Bright Click</small>
+                            </p>
+                            <div class="card-price">16.963₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch 17 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="17" data-brand="Cherry" data-type="Clicky">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/switches/17.webp" alt="Cherry Clicky Blue MX" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">Cherry Clicky Blue MX</h5>
+                            <p class="card-text-custom">
+                                <small class="text-secondary"><strong>Thương Hiệu:</strong> Cherry | Loại: Clicky | Kích Hoạt: 50g | Âm Thanh: Classic Click</small>
+                            </p>
+                            <div class="card-price">20.970₫/pack</div>
+                            <a href="product-detail.html" class="btn btn-card">Thêm Vào Giỏ</a>
+                            <a href="product-detail.html" class="btn btn-card-outline">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Logo & Description -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">VNMK</span>
+                        </a>
+                    </div>
+                    <p class="footer-desc">VNMK - Vietnam Mechanical Keyboard. Xây dựng bàn phím hoàn hảo của bạn với các linh kiện cao cấp, switch tùy chỉnh và bộ keycap độc đáo.</p>
+                </div>
+                <!-- Column 2: Shop -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Cửa Hàng</h5>
+                    <ul class="footer-links">
+                        <li><a href="keyboards.html">Bàn Phím</a></li>
+                        <li><a href="keycaps.html">Keycap</a></li>
+                        <li><a href="switches.html">Switch</a></li>
+                        <li><a href="keyboards.html">Phụ Kiện</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Hỗ Trợ</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="about.html">Bảo Hành</a></li>
+                        <li><a href="contact.html">Vận Chuyển</a></li>
+                        <li><a href="contact.html">Trả Hàng</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Kết Nối Với Chúng Tôi</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 VNMK – Vietnam Mechanical Keyboard. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cart Management Script -->
+    <script src="js/cart.js"></script>
+    
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+            const productItems = document.querySelectorAll('.product-item');
+            
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', filterProducts);
+            });
+            
+            function filterProducts() {
+                // Get all selected filters
+                const selectedFilters = {
+                    brand: [],
+                    type: []
+                };
+                
+                filterCheckboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        const filterType = checkbox.getAttribute('data-filter');
+                        const filterValue = checkbox.getAttribute('data-value');
+                        if (selectedFilters[filterType]) {
+                            selectedFilters[filterType].push(filterValue);
+                        }
+                    }
+                });
+                
+                // Filter products
+                productItems.forEach(item => {
+                    let show = true;
+                    
+                    // Check brand filter
+                    if (selectedFilters.brand.length > 0) {
+                        const itemBrand = item.getAttribute('data-brand');
+                        if (!selectedFilters.brand.includes(itemBrand)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Check type filter
+                    if (selectedFilters.type.length > 0 && show) {
+                        const itemType = item.getAttribute('data-type');
+                        if (!selectedFilters.type.includes(itemType)) {
+                            show = false;
+                        }
+                    }
+                    
+                    // Show or hide item
+                    if (show) {
+                        item.style.display = '';
+                        item.classList.add('fade-in');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+        
+        // Add product detail links with parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const productItems = document.querySelectorAll('.product-item');
+            productItems.forEach((item) => {
+                const productId = item.getAttribute('data-product-id');
+                const detailLinks = item.querySelectorAll('a[href="product-detail.html"]');
+                detailLinks.forEach(link => {
+                    link.href = `product-detail.html?category=switches&id=${productId}`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

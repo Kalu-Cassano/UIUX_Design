@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNMK - Vietnam Mechanical Keyboard | Xây Dựng Bàn Phím Hoàn Hảo Của Bạn</title>
+    <meta name="description" content="VNMK - Vietnam Mechanical Keyboard. Bàn phím cơ tùy chỉnh, switch, keycap và phụ kiện. Xây dựng bàn phím hoàn hảo của bạn.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">VNMK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keyboards.html">Bàn Phím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keycaps.html">Keycap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="switches.html">Switch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">VNMK</h1>
+                    <h2 class="hero-subtitle">Vietnam Mechanical Keyboard</h2>
+                    <p class="lead text-secondary mb-4">Tùy Chỉnh • Âm Thanh • Thẩm Mỹ</p>
+                    <p class="text-secondary mb-4">Xây dựng bàn phím hoàn hảo của bạn với các linh kiện cao cấp, switch tùy chỉnh và bộ keycap độc đáo. Trải nghiệm nghệ thuật của bàn phím cơ.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="keyboards.html" class="btn btn-primary-custom">Mua Bàn Phím</a>
+                        <a href="switches.html" class="btn btn-secondary-custom">Khám Phá Switch</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image mt-5 mt-lg-0">
+                    <div class="card-img-wrapper" style="min-height: 400px;">
+                        <img src="images/keyboards/1.webp" alt="VNMK Hero Keyboard" class="card-img-top" style="height: 100%; object-fit: cover; border-radius: 0.75rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Danh Mục Nổi Bật</h2>
+            <p class="section-subtitle">Khám phá các linh kiện bàn phím cơ cao cấp của chúng tôi</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="keyboards.html" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-keyboard"></i>
+                        </div>
+                        <h3 class="category-title">Bàn Phím Cơ</h3>
+                        <p class="category-desc">Bàn phím tùy chỉnh với switch và layout cao cấp</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="switches.html" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        <h3 class="category-title">Switch</h3>
+                        <p class="category-desc">Switch Linear, Tactile và Clicky cho mọi sở thích</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="keycaps.html" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                        </div>
+                        <h3 class="category-title">Keycap</h3>
+                        <p class="category-desc">Bộ keycap ABS và PBT cao cấp với nhiều profile</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="keyboards.html" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3 class="category-title">Phụ Kiện</h3>
+                        <p class="category-desc">Cáp, hộp đựng, stabilizer và nhiều hơn nữa</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+            <p class="section-subtitle">Những bàn phím cơ cao cấp được chọn lọc kỹ lưỡng</p>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="2">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/2.webp" alt="VNMK Pro 75%" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK Pro 75%</h5>
+                            <p class="card-text-custom">Layout 75% cao cấp với switch hot-swappable</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                            </div>
+                            <div class="card-price">2.990.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=2" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="3">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/3.webp" alt="VNMK TKL Classic" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK TKL Classic</h5>
+                            <p class="card-text-custom">Thiết kế Tenkeyless với chất lượng build cao cấp</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-half rating-star"></i>
+                            </div>
+                            <div class="card-price">2.490.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=3" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="4">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/4.webp" alt="VNMK 65% Compact" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK 65% Compact</h5>
+                            <p class="card-text-custom">Layout compact hoàn hảo cho gaming và làm việc</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star rating-star"></i>
+                            </div>
+                            <div class="card-price">1.990.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=4" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="5">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/5.webp" alt="VNMK Fullsize Elite" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK Fullsize Elite</h5>
+                            <p class="card-text-custom">Bàn phím full-size với các tính năng cao cấp</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                            </div>
+                            <div class="card-price">3.490.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=5" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="6">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/6.webp" alt="VNMK 60% Mini" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK 60% Mini</h5>
+                            <p class="card-text-custom">Layout 60% siêu compact cho người yêu tối giản</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-half rating-star"></i>
+                            </div>
+                            <div class="card-price">1.790.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=6" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-4 product-item" data-product-id="7">
+                    <div class="card card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="images/keyboards/7.webp" alt="VNMK Pro 75% RGB" class="card-img-top">
+                        </div>
+                        <div class="card-body-custom">
+                            <h5 class="card-title-custom">VNMK Pro 75% RGB</h5>
+                            <p class="card-text-custom">Layout 75% với đèn RGB tùy chỉnh</p>
+                            <div class="rating">
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                                <i class="bi bi-star-fill rating-star"></i>
+                            </div>
+                            <div class="card-price">3.290.000₫</div>
+                            <a href="product-detail.html?category=keyboards&id=7" class="btn btn-card">Xem Sản Phẩm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Logo & Description -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <div class="logo-icon"></div>
+                            <span class="logo-text">VNMK</span>
+                        </a>
+                    </div>
+                    <p class="footer-desc">VNMK - Vietnam Mechanical Keyboard. Xây dựng bàn phím hoàn hảo của bạn với các linh kiện cao cấp, switch tùy chỉnh và bộ keycap độc đáo.</p>
+                </div>
+                <!-- Column 2: Shop -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Cửa Hàng</h5>
+                    <ul class="footer-links">
+                        <li><a href="keyboards.html">Bàn Phím</a></li>
+                        <li><a href="keycaps.html">Keycap</a></li>
+                        <li><a href="switches.html">Switch</a></li>
+                        <li><a href="keyboards.html">Phụ Kiện</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Hỗ Trợ</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="about.html">Bảo Hành</a></li>
+                        <li><a href="contact.html">Vận Chuyển</a></li>
+                        <li><a href="contact.html">Đổi Trả</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Kết Nối Với Chúng Tôi</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 VNMK – Vietnam Mechanical Keyboard. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cart Management Script -->
+    <script src="js/cart.js"></script>
+    
+    <script>
+        // Update cart badge
+        function updateCartBadge() {
+            updateCartBadgeGlobal();
+        }
+        
+        // Initialize on page load and listen for storage changes
+        document.addEventListener('DOMContentLoaded', updateCartBadge);
+        window.addEventListener('storage', updateCartBadge);
+    </script>
+</body>
+</html>
+
