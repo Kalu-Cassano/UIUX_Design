@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dịch vụ - KaluKeys</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar dùng chung -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KaluKeys</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#kkNavbar"
+        aria-controls="kkNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="kkNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Dịch vụ</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 mt-4">
+    <section>
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="kk-badge mb-2">
+            <i class="bi bi-tools"></i>
+            Dịch vụ phím cơ
+          </span>
+          <h1 class="section-title mb-2">Dịch vụ tại KaluKeys</h1>
+          <p class="section-subtitle">
+            Chăm sóc trọn gói cho bàn phím cơ của bạn: từ lube switch đến build custom hoàn chỉnh.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Switch lubing -->
+          <div class="col-md-6 col-lg-3">
+            <div class="kk-card h-100 p-3">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon me-3">
+                  <i class="bi bi-droplet-half"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Switch lubing</h5>
+                  <small class="text-muted">Lube switch chuyên nghiệp</small>
+                </div>
+              </div>
+              <p class="text-muted small mb-3">
+                Sử dụng lube chất lượng cao, quy trình chuẩn, đảm bảo switch mượt, âm êm và bền.
+              </p>
+              <button class="btn btn-kk-primary btn-sm w-100">Đặt lịch lube switch</button>
+            </div>
+          </div>
+
+          <!-- Stabilizer modding -->
+          <div class="col-md-6 col-lg-3">
+            <div class="kk-card h-100 p-3">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon me-3">
+                  <i class="bi bi-arrows-collapse"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Stabilizer modding</h5>
+                  <small class="text-muted">Hết rattle, hết ping</small>
+                </div>
+              </div>
+              <p class="text-muted small mb-3">
+                Clipping, band-aid, lube stab giúp phím dài chắc tiếng, giảm rung lắc và tạp âm.
+              </p>
+              <button class="btn btn-kk-primary btn-sm w-100">Mod stab ngay</button>
+            </div>
+          </div>
+
+          <!-- Custom keyboard build -->
+          <div class="col-md-6 col-lg-3">
+            <div class="kk-card h-100 p-3">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon me-3">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Custom keyboard build</h5>
+                  <small class="text-muted">Build theo gu riêng</small>
+                </div>
+              </div>
+              <p class="text-muted small mb-3">
+                Tư vấn combo case, plate, switch, keycap theo ngân sách và phong cách setup của bạn.
+              </p>
+              <button class="btn btn-kk-primary btn-sm w-100">Tư vấn build phím</button>
+            </div>
+          </div>
+
+          <!-- Keyboard cleaning -->
+          <div class="col-md-6 col-lg-3">
+            <div class="kk-card h-100 p-3">
+              <div class="d-flex align-items-center mb-3">
+                <div class="service-icon me-3">
+                  <i class="bi bi-water"></i>
+                </div>
+                <div>
+                  <h5 class="mb-1">Keyboard cleaning</h5>
+                  <small class="text-muted">Vệ sinh &amp; bảo dưỡng</small>
+                </div>
+              </div>
+              <p class="text-muted small mb-3">
+                Tháo keycap, vệ sinh sâu, kiểm tra lại switch và stab giúp bàn phím luôn như mới.
+              </p>
+              <button class="btn btn-kk-primary btn-sm w-100">Đặt lịch vệ sinh</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer dùng chung -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6">
+          <span class="navbar-brand mb-0">KaluKeys</span>
+          <p class="text-muted small mb-0">
+            © <span id="year"></span> KaluKeys – Mechanical Keyboard Store Vietnam.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

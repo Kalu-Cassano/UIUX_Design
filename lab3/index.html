@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KaluKeys – Mechanical Keyboard Store Vietnam</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons (dùng cho icon dịch vụ & mạng xã hội) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
+  <!-- CSS riêng của KaluKeys -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar (multi-page) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KaluKeys</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#kkNavbar"
+        aria-controls="kkNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="kkNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Sản phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Dịch vụ</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <header id="hero" class="hero-section pt-5">
+    <div
+      id="heroCarousel"
+      class="carousel slide hero-carousel"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-item active"
+          style="background-image: url('https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=1600');"
+        >
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <div class="hero-badge mb-3">
+                <i class="bi bi-keyboard"></i>
+                Cửa hàng phím cơ Việt Nam
+              </div>
+              <h1 class="hero-title mb-3">Bàn Phím Cơ Cao Cấp</h1>
+              <p class="hero-text mb-4">
+                Khám phá các bàn phím từ Neo, TKD, Geon và Akko – build sẵn hoặc custom theo phong cách
+                của bạn, tối ưu trải nghiệm gõ từng cú nhấn.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="products.html" class="btn btn-kk-primary btn-lg">
+                  Mua ngay
+                </a>
+                <a href="news.html" class="btn btn-kk-outline btn-lg">
+                  Xem review &amp; tips
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item"
+          style="background-image: url('https://images.pexels.com/photos/2115258/pexels-photo-2115258.jpeg?auto=compress&cs=tinysrgb&w=1600');"
+        >
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <div class="hero-badge mb-3">
+                <i class="bi bi-lightning-charge"></i>
+                Tinh chỉnh cảm giác gõ
+              </div>
+              <h1 class="hero-title mb-3">Switch Và Keycap Chất Lượng</h1>
+              <p class="hero-text mb-4">
+                Nhiều lựa chọn switch và keycap cho dân chơi phím – từ linears, tactiles đến clicky,
+                kèm profile keycap đa dạng.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="products.html" class="btn btn-kk-primary btn-lg">Xem sản phẩm</a>
+                <a href="products.html" class="btn btn-kk-outline btn-lg">Keycap nổi bật</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item"
+          style="background-image: url('https://images.pexels.com/photos/2888350/pexels-photo-2888350.jpeg?auto=compress&cs=tinysrgb&w=1600');"
+        >
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <div class="hero-badge mb-3">
+                <i class="bi bi-tools"></i>
+                Workshop mod phím chuyên nghiệp
+              </div>
+              <h1 class="hero-title mb-3">Dịch Vụ Mod Phím Chuyên Nghiệp</h1>
+              <p class="hero-text mb-4">
+                Lube switch, mod stabilizer và build keyboard custom theo yêu cầu. Tối ưu âm thanh
+                và cảm giác gõ theo đúng gu của bạn.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="services.html" class="btn btn-kk-primary btn-lg">Xem dịch vụ</a>
+                <a href="contact.html" class="btn btn-kk-outline btn-lg">Đặt lịch ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Trước</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Tiếp</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Featured Products -->
+  <section id="banphim">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="kk-badge mb-2">
+          <i class="bi bi-stars"></i>
+          Sản phẩm nổi bật
+        </span>
+        <h2 class="section-title mb-2">Bàn phím cơ nổi bật</h2>
+        <p class="section-subtitle">
+          Những mẫu phím cơ cao cấp được cộng đồng đánh giá cao về build, âm thanh và trải nghiệm gõ.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Neo65 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/7772550/pexels-photo-7772550.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="Neo65 Mechanical Keyboard"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Neo65</h5>
+              <p class="kk-price mb-2">Từ 7.500.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Layout 65%, vỏ nhôm CNC, gasket mount cho cảm giác gõ êm, âm thanh đầy đặn.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Hot trong cộng đồng
+                </span>
+                <a href="product-detail.html" class="btn btn-kk-primary btn-sm">
+                  Xem chi tiết
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neo70 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="Neo70 Mechanical Keyboard"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Neo70</h5>
+              <p class="kk-price mb-2">Từ 8.900.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Layout 70% với dãy F-row, cân bằng giữa typing, gaming và productivity.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Groupbuy giới hạn
+                </span>
+                <a href="products.html" class="btn btn-kk-primary btn-sm">
+                  Xem sản phẩm
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Geon F1-8X -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/2115254/pexels-photo-2115254.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="Geon F1-8X Mechanical Keyboard"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Geon F1-8X</h5>
+              <p class="kk-price mb-2">Từ 10.500.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Layout TKL huyền thoại với sound profile “thocky”, build chắc chắn, hoàn thiện cao cấp.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Limited run
+                </span>
+                <a href="products.html" class="btn btn-kk-primary btn-sm">
+                  Xem thêm phím Geon
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TKD Cycle7 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/3784581/pexels-photo-3784581.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="TKD Cycle7"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">TKD Cycle7</h5>
+              <p class="kk-price mb-2">Từ 6.900.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Thiết kế hiện đại, plate đa chất liệu, phù hợp cho cả người mới lẫn người chơi lâu năm.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Bảo hành 12 tháng
+                </span>
+                <a href="products.html" class="btn btn-kk-primary btn-sm">
+                  Xem chi tiết
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Akko 5075B Plus -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/4792721/pexels-photo-4792721.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="Akko 5075B Plus"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Akko 5075B Plus</h5>
+              <p class="kk-price mb-2">Từ 2.350.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Wireless 2.4G/Bluetooth, hot-swap, phù hợp làm daily driver cho mọi nhu cầu.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Value / Performance
+                </span>
+                <a href="products.html" class="btn btn-kk-primary btn-sm">
+                  Xem Akko 5075B
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monsgeek M1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/4792713/pexels-photo-4792713.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top kk-card-img"
+              alt="Monsgeek M1"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Monsgeek M1</h5>
+              <p class="kk-price mb-2">Từ 2.990.000₫</p>
+              <p class="card-text text-muted small mb-3">
+                Vỏ nhôm giá tốt, mod dễ dàng, là lựa chọn hoàn hảo để bước vào thế giới custom.
+              </p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="badge text-bg-dark border border-light-subtle">
+                  Best for beginners
+                </span>
+                <a href="products.html" class="btn btn-kk-primary btn-sm">
+                  Xem Monsgeek M1
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section id="switch">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="kk-badge mb-2">
+          <i class="bi bi-grid-3x3-gap"></i>
+          Danh mục sản phẩm
+        </span>
+        <h2 class="section-title mb-2">Khám phá theo danh mục</h2>
+        <p class="section-subtitle">
+          Chọn nhanh theo nhu cầu: build bàn phím mới, nâng cấp switch, thay keycap hay tìm thêm phụ kiện.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Bàn phím -->
+        <div class="col-md-6 col-lg-3" id="keycap">
+          <div class="kk-card h-100 text-center p-3">
+            <div class="service-icon mb-3 mx-auto">
+              <i class="bi bi-keyboard"></i>
+            </div>
+            <h5 class="mb-2">Bàn phím</h5>
+            <p class="text-muted small mb-3">
+              Layout 60%, 65%, TKL, Fullsize – đa dạng cho mọi setup.
+            </p>
+            <a href="#banphim" class="btn btn-sm btn-kk-outline">
+              Xem bàn phím
+            </a>
+          </div>
+        </div>
+
+        <!-- Switch -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 text-center p-3">
+            <div class="service-icon mb-3 mx-auto">
+              <i class="bi bi-toggle-on"></i>
+            </div>
+            <h5 class="mb-2">Switch</h5>
+            <p class="text-muted small mb-3">
+              Linears, tactiles, clicky từ nhiều brand: Gateron, TTC, JWK, v.v.
+            </p>
+            <a href="#switch" class="btn btn-sm btn-kk-outline">
+              Xem switch
+            </a>
+          </div>
+        </div>
+
+        <!-- Keycap -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 text-center p-3">
+            <div class="service-icon mb-3 mx-auto">
+              <i class="bi bi-grid-1x2"></i>
+            </div>
+            <h5 class="mb-2">Keycap</h5>
+            <p class="text-muted small mb-3">
+              Profile Cherry, SA, XDA, OEM với nhiều phối màu cho setup của bạn.
+            </p>
+            <a href="#keycap" class="btn btn-sm btn-kk-outline">
+              Xem keycap
+            </a>
+          </div>
+        </div>
+
+        <!-- Phụ kiện -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 text-center p-3" id="phukien">
+            <div class="service-icon mb-3 mx-auto">
+              <i class="bi bi-box-seam"></i>
+            </div>
+            <h5 class="mb-2">Phụ kiện</h5>
+            <p class="text-muted small mb-3">
+              Deskmat, cable, foam kit, lube, tools và nhiều hơn thế.
+            </p>
+            <a href="#dichvu" class="btn btn-sm btn-kk-outline">
+              Xem phụ kiện
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="dichvu">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="kk-badge mb-2">
+          <i class="bi bi-wrench-adjustable-circle"></i>
+          Dịch vụ tại KaluKeys
+        </span>
+        <h2 class="section-title mb-2">Dịch vụ mod &amp; chăm sóc phím</h2>
+        <p class="section-subtitle">
+          Đội ngũ kỹ thuật viên nhiều kinh nghiệm, thao tác cẩn thận, thiết bị đầy đủ để mang lại trải nghiệm gõ tối ưu.
+        </p>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <!-- Lube Switch -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="service-icon me-3">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Lube Switch</h5>
+                <small class="text-muted">Âm êm, mượt mà hơn</small>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              Sử dụng lube chính hãng, quy trình chuẩn, tối ưu âm thanh và loại bỏ cảm giác scratchy.
+            </p>
+            <button class="btn btn-kk-primary btn-sm w-100" type="button">
+              Đặt lịch lube switch
+            </button>
+          </div>
+        </div>
+
+        <!-- Mod Stabilizer -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="service-icon me-3">
+                <i class="bi bi-arrows-collapse"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Mod Stabilizer</h5>
+                <small class="text-muted">Giảm rung, hết ping</small>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              Clipping, band-aid, lube stabilizer đúng kỹ thuật cho spacebar, enter, shift mượt và chắc tiếng.
+            </p>
+            <button class="btn btn-kk-primary btn-sm w-100" type="button">
+              Mod stab ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- Build Keyboard Custom -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="service-icon me-3">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Build Keyboard Custom</h5>
+                <small class="text-muted">Theo gu của bạn</small>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              Tư vấn combo case, plate, switch, keycap phù hợp và build hoàn chỉnh theo setup mong muốn.
+            </p>
+            <button class="btn btn-kk-primary btn-sm w-100" type="button">
+              Tư vấn build phím
+            </button>
+          </div>
+        </div>
+
+        <!-- Cleaning Keyboard -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="service-icon me-3">
+                <i class="bi bi-water"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Cleaning Keyboard</h5>
+                <small class="text-muted">Làm sạch &amp; bảo dưỡng</small>
+              </div>
+            </div>
+            <p class="text-muted small mb-3">
+              Vệ sinh sâu, làm sạch keycap, case, plate và PCB giúp bàn phím luôn như mới.
+            </p>
+            <button class="btn btn-kk-primary btn-sm w-100" type="button">
+              Đặt lịch vệ sinh
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ (Accordion component) -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOneHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqOne"
+                  aria-expanded="false"
+                  aria-controls="faqOne"
+                >
+                  Thời gian hoàn thành dịch vụ mod phím là bao lâu?
+                </button>
+              </h2>
+              <div
+                id="faqOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqOneHeading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body text-muted">
+                  Tuỳ khối lượng công việc, thường từ 1–3 ngày làm việc cho combo lube switch, mod stab và build full keyboard.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwoHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqTwo"
+                  aria-expanded="false"
+                  aria-controls="faqTwo"
+                >
+                  KaluKeys có nhận ship toàn quốc không?
+                </button>
+              </h2>
+              <div
+                id="faqTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqTwoHeading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body text-muted">
+                  Có, chúng tôi hỗ trợ ship COD toàn quốc với đóng gói chống sốc kỹ càng và bảo hiểm hàng hóa theo giá trị đơn hàng.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThreeHeading">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqThree"
+                  aria-expanded="false"
+                  aria-controls="faqThree"
+                >
+                  Tôi có thể tự mang linh kiện tới để build không?
+                </button>
+              </h2>
+              <div
+                id="faqThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqThreeHeading"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body text-muted">
+                  Hoàn toàn được. Bạn có thể mang case, plate, PCB, switch, keycap của riêng mình tới, chúng tôi sẽ hỗ trợ build và test hoàn thiện.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News / Blog Section -->
+  <section id="tintuc">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+        <div>
+          <span class="kk-badge mb-2">
+            <i class="bi bi-newspaper"></i>
+            Tin tức phím cơ
+          </span>
+          <h2 class="section-title mb-1">Tin tức &amp; bài viết mới</h2>
+        </div>
+        <!-- Breadcrumb component -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none text-light-50">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active text-light" aria-current="page">
+              Tin tức phím cơ
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <p class="section-subtitle mb-4">
+        Tổng hợp bài viết chia sẻ kinh nghiệm chơi phím, tips mod phím và review các mẫu keyboard hot trên thị trường.
+      </p>
+
+      <div class="row g-4">
+        <!-- Article 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top blog-card-img"
+              alt="Cách chọn switch"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h6 class="text-uppercase text-muted small mb-1">Hướng dẫn cơ bản</h6>
+              <h5 class="card-title mb-2">
+                Cách chọn switch phù hợp cho người mới
+              </h5>
+              <p class="card-text text-muted small mb-3">
+                Linear, tactile hay clicky? Làm sao để chọn đúng loại switch cho nhu cầu làm việc, chơi game và sở thích âm thanh của bạn?
+              </p>
+              <a href="article.html" class="btn btn-kk-outline btn-sm mt-auto">
+                Đọc thêm
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/1148399/pexels-photo-1148399.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top blog-card-img"
+              alt="Top bàn phím custom 2025"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h6 class="text-uppercase text-muted small mb-1">Gợi ý mua sắm</h6>
+              <h5 class="card-title mb-2">
+                Top bàn phím custom đáng mua 2025
+              </h5>
+              <p class="card-text text-muted small mb-3">
+                Danh sách những mẫu custom board được cộng đồng khen ngợi về chất lượng build, âm thanh và giá trị sử dụng.
+              </p>
+              <a href="article.html" class="btn btn-kk-outline btn-sm mt-auto">
+                Đọc thêm
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/3854761/pexels-photo-3854761.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top blog-card-img"
+              alt="Hướng dẫn lube switch"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h6 class="text-uppercase text-muted small mb-1">Mod nâng cao</h6>
+              <h5 class="card-title mb-2">
+                Hướng dẫn lube switch đúng cách
+              </h5>
+              <p class="card-text text-muted small mb-3">
+                Các bước lube switch chi tiết, loại lube nên dùng và những lỗi thường gặp khiến switch mất cảm giác.
+              </p>
+              <a href="article.html" class="btn btn-kk-outline btn-sm mt-auto">
+                Đọc thêm
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="kk-card h-100">
+            <img
+              src="https://images.pexels.com/photos/4792720/pexels-photo-4792720.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              class="card-img-top blog-card-img"
+              alt="So sánh Neo và Geon"
+            />
+            <div class="kk-card-body d-flex flex-column">
+              <h6 class="text-uppercase text-muted small mb-1">So sánh chi tiết</h6>
+              <h5 class="card-title mb-2">
+                So sánh Neo và Geon keyboards
+              </h5>
+              <p class="card-text text-muted small mb-3">
+                Đặt Neo và Geon lên bàn cân: cảm giác gõ, sound profile, build quality và giá trị sử dụng dài hạn.
+              </p>
+              <a href="article.html" class="btn btn-kk-outline btn-sm mt-auto">
+                Đọc thêm
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination component (optional for tin tức) -->
+      <nav class="mt-4" aria-label="Điều hướng trang tin tức">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <span class="page-link">Trước</span>
+          </li>
+          <li class="page-item active"><span class="page-link">1</span></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Tiếp</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Promotion Alert -->
+  <section>
+    <div class="container">
+      <div class="alert kk-alert d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="service-icon">
+            <i class="bi bi-bell"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Đừng bỏ lỡ groupbuy mới!</h5>
+            <p class="mb-0 small">
+              Đăng ký email để nhận thông tin về các keyboard groupbuy mới, lịch mở bán và ưu đãi dành riêng cho thành viên.
+            </p>
+          </div>
+        </div>
+        <form class="d-flex flex-column flex-sm-row gap-2" role="form">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Nhập email của bạn"
+            aria-label="Email đăng ký groupbuy"
+          />
+          <button type="submit" class="btn btn-kk-primary">
+            Đăng ký ngay
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="lienhe">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <span class="kk-badge mb-2">
+            <i class="bi bi-envelope-paper"></i>
+            Liên hệ KaluKeys
+          </span>
+          <h2 class="section-title mb-3">Bạn muốn tư vấn build phím?</h2>
+          <p class="text-muted mb-4">
+            Hãy để lại thông tin, đội ngũ KaluKeys sẽ liên hệ tư vấn combo bàn phím, switch, keycap hoặc dịch vụ mod
+            phù hợp với gu và ngân sách của bạn.
+          </p>
+
+          <ul class="list-unstyled text-muted mb-3">
+            <li class="mb-2">
+              <i class="bi bi-geo-alt text-teal me-2"></i>
+              <span>Showroom: Quận trung tâm TP. Hồ Chí Minh</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-telephone text-teal me-2"></i>
+              <span>Hotline: 0901 234 567</span>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-clock text-teal me-2"></i>
+              <span>Giờ làm việc: 10:00 – 21:00 (Thứ 2 – Chủ nhật)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="kk-card p-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Tên của bạn</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nhập tên"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Nhập email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Nội dung</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Bạn muốn tư vấn về bàn phím, switch, keycap hay dịch vụ mod?"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-kk-primary w-100">
+                Gửi yêu cầu
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6">
+          <span class="navbar-brand mb-0">KaluKeys</span>
+          <p class="text-muted small mb-0">
+            © <span id="year"></span> KaluKeys – Mechanical Keyboard Store Vietnam. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (Bundle: Popper + JS) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <script>
+    // Cập nhật năm hiện tại cho footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
